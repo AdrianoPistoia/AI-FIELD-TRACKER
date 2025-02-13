@@ -1,0 +1,43 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "electron": "^34.0.2",
+    "express": "^4.21.2",
+    "marked": "^15.0.6",
+    "openai": "^4.82.0",
+    "xlsx": "^0.18.5"
+  },
+  "name": "ai-sql-bot",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "electron .",  
+    "build": "electron-builder", 
+    "dist": "electron-builder --win --mac --linux" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "build": {
+    "appId": "com.example.myapp",
+    "productName": "AI SQL Assistant",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        "nsis-web",
+        "zip",
+        "portable"
+      ],
+      "icon": ".ico/icon.ico"
+    },
+    "portable": {
+      "artifactName": "${productName}-${version}-portable.${ext}"
+    }
+  },
+  "devDependencies": {
+    "electron-builder": "^25.1.8"
+  }
+}

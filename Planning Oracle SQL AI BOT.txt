@@ -1,0 +1,55 @@
+POC: 
+    Herramienta de input y AI output visual.
+    Dada una pregunta sobre la base de datos, brindar informacion sobre donde ubicar cierta data, como encontrarla o que contenidos tiene.
+    Basicamente un SQL Assistant [AI Bot]
+
+Medio planeado.
+    Tecnologias: 
+        Front:  Javascript [vanilla] - HTML - CSS
+        Back:   NodeJS
+        Empaquetador: ElectronJS
+        Resultado: Multiplataforma [Windows/Linux/IOS (Big 3s)]    
+    Estructura:
+        Programacion Orientada a Objetos [POO]
+    Concepto:
+        Ventana oculta o retraida tipo "overlay", la cual una vez clickeada o interactuada, se expande revelando una ventana tipo chat,
+        la cual permite preguntar sobre una base de datos especifica precargada.
+        OPCIONAL:
+            Apartado "settings" para re configurar la la IA o a que BBDD le pegan las consultas, ademas de presonalizaciones extras.
+
+
+Detalles Fase 1:
+    Ventana Overlay
+    Circulo
+    Logo de Insis
+    Evento on click -> Expande a ventana de (45 innerWidth x 90 innerHeight)
+    En vez de boton de maximizar, boton de "Redondizar"
+    Maquetar ventana de respuesta de Bot IA y input de insersion de consultas para Bot IA
+    Barra de navegacion con botones default y carteles de confirmacion al cierre.
+
+Detalles Fase 2:
+    Introduccion de IA a la ventana de interaccion tipo chat.
+    Generacion de API KEY 
+    Test de consultas generales para IA Exitosas
+    Configuracion de limitaciones para IA con respecto a Oracle SQL
+    Pre-consumicion de BBDD propia o dinamica
+
+Detalles Fase 3:
+    Bullet proofing de IA para evitar leaks de informacion sensible
+    Pulido de UI/UX
+    Release para Windows
+    Fase de Release/Test/Debug para Android y Linux
+    Fase de Release/Test/Debug para IOs
+
+Extras/Soporte:
+    Ajuste de animaciones 
+    Replaneamiento de estructura de codigo 
+    Optimizacion general
+    Analisis de CybreSec
+
+
+
+
+
+Desarrollo
+	Acotar testeo para POC
